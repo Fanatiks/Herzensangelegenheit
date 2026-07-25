@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Herzensangelegenheit</title>
+<meta name="theme-color" content="#3a0f1c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Herzensangelegenheit">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAFD0lEQVR4nO3dy3HUUBBG4R6KvRNwJI7CKbAiJlakQIZmASoG1cijx739+s+3p5D69pFmChe+vb28fhgg6kv0BQCRCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSvkZfwEw/f7wf/jPfvv8afh2ZMJP/3Tr9iqQzh/tM9cNnJp8rH8CMA95S5eCZyX5lA/A85LWsh85MjisXQOQhr2U5dGZyXpkAMh3yWtShM5Pr0geQ+ZDXvA6dmYyT+t8BKh20mc/1MpOx0gaQfXBbZl43MxkvZQCZB7bHjOtnJnOk+g6QdUhXXP0MzEzmSvMG6HjQZtfui5nMlyKATAOZ4cz9MRMfKQIAooQHkOVJMNuR+2QmfkIDyDAAT3vul5n4Cgsg+sajfHbfzMRfSACqB714dP/M5D3k7w3/DgBEcg9A/Um3uJ8DM/kjYg68ASDN9UcheNJhD88fleANAGluAfD0x16eu8IbANJcAuDpj6O8doY3AKQRAKRND4CPPzjLY3d4A0AaAUAaAUAaAUDa1AD4AoyrZu8QbwBIIwBIIwBIIwBIIwBIIwBIIwBIIwBIIwBIIwBIIwBImxpApl+Fg5pm7xA/DIfUSv8wHG8AXFX6DQBkRwCQNj0APgbhLI/d4Q0AaQQAaS4B8DEIR3ntDG8ASHMLgLcA9uI3xABOXAPgLYBnvHeENwCkuQfAWwBbInaDNwCkhQTAWwBrUTsR9gYgAiwidyH0IxARIHoHwr8DRA8AcTKcfXgAQKQUAWR4EsBXljNPEYBZnoFgvkxnfXt7ef2Ivog1/jeJnjIt/iLNG+BexkHhmqxnmjIAs7wDw3GZzzJtAGa5B4d9sp9hyu8Aj/C9oJbsi78oE8CCEHKrsviL1B+BHqk2YCUVz6ZcAGY1B91d1TMpGYBZ3YEjl7IBmBFBFpXPoXQAiFd5+c0aBFD9ACrrMPvyAZj1OIhqusy8RQBmfQ4EvtoEYEYEXjrNuVUAmK/T8ps1DKDbAWXScbbtAjDreVDRus60ZQBmfQ8MY7UNwIwIRuk8x9YB4LrOy28mEED3A5xJYXbtAzDTOEicIxGAGREcpTIvmQDMdA71KqU5SQWA55SW30wwALUDPkJxNnIBmGkeNB6TDMCMCNZU5yEbAP5RXX4z8QCUD36hPgPpAMxYAHXyAZjpRqB63/cI4C+1ZVC73y0EIIjl/4cA7igshsI9HkEAKyyIFgJ4oGsEXe/rCgLY0G1Zut3PKAQggOXfRgCf6LA4He5hJgJ4ggXqjQB2qBpB1ev2RAA7VVumatcbhQAaYvn3I4ADWKx+COCg7BFkv75sCOCErEuW9boyI4CTsi1btuupggAaYPnPI4ALWLz6COCi6Aii//7qCGCAqCVk+a8jgEG8l5HlH4MAII0ABvJ6KvP0H4cABpu9nCz/WAQwwawlZfnHI4AiWP45CGASFrYGAphoVATENA8BTHZ1eVn+uQjAwdklZvnnI4CkWH4fBOCEhc6JABztjYBY/BCAs2fLzfL7IoAAW0vO8vsjAEgjgCDrpz1P/xgEEGhZepY/zu3t5fUj+iKAKLwBII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AIO0333RicSR/ZJIAAAAASUVORK5CYII=">
+<link rel="icon" type="image/png" sizes="192x192" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAFD0lEQVR4nO3dy3HUUBBG4R6KvRNwJI7CKbAiJlakQIZmASoG1cijx739+s+3p5D69pFmChe+vb28fhgg6kv0BQCRCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSCADSvkZfwEw/f7wf/jPfvv8afh2ZMJP/3Tr9iqQzh/tM9cNnJp8rH8CMA95S5eCZyX5lA/A85LWsh85MjisXQOQhr2U5dGZyXpkAMh3yWtShM5Pr0geQ+ZDXvA6dmYyT+t8BKh20mc/1MpOx0gaQfXBbZl43MxkvZQCZB7bHjOtnJnOk+g6QdUhXXP0MzEzmSvMG6HjQZtfui5nMlyKATAOZ4cz9MRMfKQIAooQHkOVJMNuR+2QmfkIDyDAAT3vul5n4Cgsg+sajfHbfzMRfSACqB714dP/M5D3k7w3/DgBEcg9A/Um3uJ8DM/kjYg68ASDN9UcheNJhD88fleANAGluAfD0x16eu8IbANJcAuDpj6O8doY3AKQRAKRND4CPPzjLY3d4A0AaAUAaAUAaAUDa1AD4AoyrZu8QbwBIIwBIIwBIIwBIIwBIIwBIIwBIIwBIIwBIIwBIIwBImxpApl+Fg5pm7xA/DIfUSv8wHG8AXFX6DQBkRwCQNj0APgbhLI/d4Q0AaQQAaS4B8DEIR3ntDG8ASHMLgLcA9uI3xABOXAPgLYBnvHeENwCkuQfAWwBbInaDNwCkhQTAWwBrUTsR9gYgAiwidyH0IxARIHoHwr8DRA8AcTKcfXgAQKQUAWR4EsBXljNPEYBZnoFgvkxnfXt7ef2Ivog1/jeJnjIt/iLNG+BexkHhmqxnmjIAs7wDw3GZzzJtAGa5B4d9sp9hyu8Aj/C9oJbsi78oE8CCEHKrsviL1B+BHqk2YCUVz6ZcAGY1B91d1TMpGYBZ3YEjl7IBmBFBFpXPoXQAiFd5+c0aBFD9ACrrMPvyAZj1OIhqusy8RQBmfQ4EvtoEYEYEXjrNuVUAmK/T8ps1DKDbAWXScbbtAjDreVDRus60ZQBmfQ8MY7UNwIwIRuk8x9YB4LrOy28mEED3A5xJYXbtAzDTOEicIxGAGREcpTIvmQDMdA71KqU5SQWA55SW30wwALUDPkJxNnIBmGkeNB6TDMCMCNZU5yEbAP5RXX4z8QCUD36hPgPpAMxYAHXyAZjpRqB63/cI4C+1ZVC73y0EIIjl/4cA7igshsI9HkEAKyyIFgJ4oGsEXe/rCgLY0G1Zut3PKAQggOXfRgCf6LA4He5hJgJ4ggXqjQB2qBpB1ev2RAA7VVumatcbhQAaYvn3I4ADWKx+COCg7BFkv75sCOCErEuW9boyI4CTsi1btuupggAaYPnPI4ALWLz6COCi6Aii//7qCGCAqCVk+a8jgEG8l5HlH4MAII0ABvJ6KvP0H4cABpu9nCz/WAQwwawlZfnHI4AiWP45CGASFrYGAphoVATENA8BTHZ1eVn+uQjAwdklZvnnI4CkWH4fBOCEhc6JABztjYBY/BCAs2fLzfL7IoAAW0vO8vsjAEgjgCDrpz1P/xgEEGhZepY/zu3t5fUj+iKAKLwBII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AII0AIO0333RicSR/ZJIAAAAASUVORK5CYII=">
+<link rel="icon" type="image/png" sizes="512x512" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAPvElEQVR4nO3bwZnbxhKFUcrf2ysBRaIonIJXjskrp+AM9RYje2Y0JIcAge6uuucEYINEofonJH35/vXbjwsAEOW32RcAAIwnAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQP+bfQFk+Puv3w/97/3x5z+H/vfgGeabir58//rtx+yLoL6jF+CzLFCOZL7pSACw2WrL8FGWJo8w36QQAHyq6kL8jIXJ5WK+ySUAuKrrUrzFssxivkEA8EbaUrzFsuzJfL8w3/xLAISzFO+zLGsz3/eZ72wCIJCluI9lWYP53sd85xEAQSzGY1iUazLfxzDfOQRAAIvxHBblGsz3Ocx3fwKgMYtxDItyDvM9hvnuSwA0ZDHOYVGOYb7nMN/9CIBGLMY1WJTnMN9rMN99CIAGLMY1WZTHMN9rMt/1CYDCLMYaLMp9zHcN5ruu32ZfAPtYjnW4V9v5zupwr+ryBqAYD1ttfi3dZ75rM9+1eANQiOVYn3t4m++mPvewFm8ACvBQ9eTX0gvz3ZP5Xp83AIuzHPtyb30Hnbm36/MGYFEenixpv5bMd5a0+a7CG4AFWY55ku550mflhXu+JgGwGA9KroR7n/AZuc69X48AWIgHhM4z0Pmz8RgzsBZ/B2ABHgqu6fLnpuaba7rMd2XeAExmOXJLh9no8Bk4h9mYTwBM5AHgM5VnpPK1M4YZmUsATGLweVTFWal4zcxhVuYRABMYeLaqNDOVrpU1mJk5BMBgBp29KsxOhWtkTWZnPAEwkAHnWSvP0MrXRg1maCwBMIjB5igrztKK10RNZmkcATCAgeZoK83UStdCD2ZqDAFwMoPMWVaYrRWugZ7M1vkEwIkMMGebOWPmm7OZsXMJgJMYXEaZMWvmm1HM2nkEwAkMLKONnDnzzWhm7hwCAAACCYCDKVVmGTF75ptZzN7xBMCBDCiznTmD5pvZzOCxBMBBDCarOGMWzTerMIvHEQAHMJCs5siZNN+sxkweQwAAQCAB8CQlyqqOmE3zzarM5vMEwBMMIKt7ZkbNN6szo88RADsZPKrYM6vmmyrM6n4CAAACCYAdFCfVbJlZ8001ZnYfAQAAgQTARkqTqh6ZXfNNVWZ3OwGwgQGjunszbL6pzgxvIwAAIJAAeJCypItrs2y+6cIsP04AAEAgAfAARUk3b2fafNONmX6MAACAQF++f/32Y/ZFrExJAtT0x5//zL6EpXkDAACBBMAdfv0D1GWH3ycAACCQALhBOQLUZ5ffJgAAIJAAuEIxAvRhp18nAAAgkAD4hVIE6Mdu/0gAAEAgAQAAgQTAG14RAfRlx78nAAAgkAAAgEAC4CevhgD6s+tfCQAACCQAACCQALh4JQSQxM5/IQAAIJAAAIBA8QHgVRBAHrtfAABAJAEAAIEEAAAEig4AfwYEkCv9DIgOAABIJQAAIJAAAIBAAgAAAsUGQPpf/gAg+yyIDQAASCYAACCQAACAQAIAAAIJAAAIJAAAIFBkACT/sw8A3ks9EyIDAADSCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAkQHwx5//zL4EABaReiZEBgAApBMAABBIAABAIAEAAIEEAAAEEgAAECg2AFL/2QcAr5LPgtgAAIBkAgAAAn35/vXbj9kXMdrff/0++xIAWEjiHwVEvgFIvNEAXJd6JkQGwOWSe8MBeJV8FsQGAAAkiw6A5PIDSJd+BkQHAACkig+A9AIESGT3CwAAiCQAACCQALh4FQSQxM5/IQAAIJAAAIBAAuAnr4QA+rPrXwkAAAgkAAAgkAB4w6shgL7s+PcEAAAEEgAAEEgA/MIrIoB+7PaPBAAABBIAVyhFgD7s9OsEAAAEEgA3KEaA+uzy2wQAAAQSAHcoR4C67PD7BAAABBIAn1CQAPXY3Z8TAAAQSAA8QEkC1GFnP0YAAEAgAfAgRQmwPrv6cQIAAAIJgA2UJcC67OhtBMBGBgxgPXbzdgIAAAIJgB2UJsA67OR9BAAABBIAOylOgPns4v0EwBMMHsA8dvBzBMCTDCDAeHbv8wQAAAQSAAdQogDj2LnHEAAHMZAA57NrjyMADmQwAc5jxx5LABzMgAIcz249ngAAgEAC4ARKFeA4duo5BMBJDCzA8+zS8wiAExlcgP3s0HMJgJMZYIDt7M7zCYABDDLA4+zMMQTAIAYa4HN25TgCYCCDDXCbHTmWABjMgAN8ZDeOJwAmMOgAr+zEOQTAJAYewC6cSQBMZPCBZHbgXAJgMg8AkMjum+/L96/ffsy+CF78/dfvsy8B4FQO/nV4A7AQDwbQmR23FgGwGA8I0JHdth4BsCAPCtCJnbYmfwdgcf5eAFCVg39t3gAszgMEVGR3rc8bgEK8DQBW5+CvwxuAQjxYwMrsqFq8ASjK2wBgFQ7+mrwBKMoDB6zALqrLG4AGvA0ARnPw1ycAGhECwNkc/H0IgIaEAHAGh38v/g5AQx5S4Gj2Sj8CAIC7HP49CYCmPLDAEeySvgRAYx5c4Bl2SG8CoDkPMADXCAAAPvDjoT8BEMCDDGxhZ2QQACE80MAj7IocAiCIBxu4x47IIgDCeMABuFwEAAAXPw4SCYBAHnTgLTshkwAI5YEHLhe7IJkACObBh2x2QDYBEM4CAMgkAAACiX8EABYBhPHMc7kIAH6yECCDZ51/CQD+YzEA5BAAvCMCoC/PN28JAIAADn9+JQD4wKKAXjzTXCMAuMrCgB48y9wiALjJ4gDoSwBwlwiAujy/3CMAABpy+PMZAcCnLBKoxTPLIwQAD7FQoAbPKo8SADzMYgHoQwCwiQiAdXk+2UIAADTg8GcrAcBmFg2sxTPJHgKAXSwcWINnkb0EALtZPAB1CQCeIgJgHs8fzxAAAAU5/HmWAOBpFhGM5ZnjCAKAQ1hIMIZnjaMIAA5jMQHUIQA4lAiA83i+OJIAACjA4c/RBACHs6jgWJ4pziAAOIWFBbA2AcBpRAA8z3PEWQQAp7K8YD/PD2cSAAALcvhzNgHA6Swy2MYzwwgCgCEsNIC1CACGEQHwOc8JowgAhrLc4DbPByMJAIAFOPwZTQAwnEUH73kmmEEAMIWFBzCXAGAaEQCeA+YRAACTOPyZSQAwlQVIKrPPbAKA6SxC0ph5ViAAWIKFCDCWAGAZIoAE5pxVCACAQRz+rEQAsBQLkq7MNqsRACzHoqQbM82KBABLsjABziUAWJYIoANzzKoEAMBJHP6sTACwNAuUqswuqxMALM8iBTieAKAEEUAl5pUKBABlWKpUYE6pQgAAHMThTyUCgFIsWFZlNqlGAFCORQvwPAFASSKAlZhHKhIAlGXpsgJzSFUCAGAnhz+VCQBKs4CZxexRnQCgPIsYYDsBQAsigJHMGx0IANqwlBnBnNGFAAB4kMOfTgQArVjQnMVs0Y0AoB2LGuBzAoCWRABHMk90JABoy9LmCOaIrgQAwA0OfzoTALRmgbOX2aE7AUB7FjnARwKACCKALcwLCQQAMSx1HmFOSCEAAH5y+JNEABDFggd4IQCIIwK4xlyQRgAQybLnLfNAIgFALEufy8UckEsAALEc/iQTAERzAACpBADxREAm9510AgAuDoM07jcIAPiPQyGD+wwvBAAQw+EPrwQAvOGAAFIIAPiFCOjJfYX3BABc4bDoxf2EjwQA0JrDH64TAHCDg6M+9xBuEwBwhwME6EoAwCdEQE3uG9wnAOABDpNa3C/4nAAAWnH4w2MEADzIwbI+9wgeJwBgAwcM0IUAgI1EwJrcF9hGAMAODpu1uB+wnQAASnP4wz4CAHZy8ACVCQB4ggiYy/cP+wkAeJJDaA7fOzxHAMABHEZj+b7heQIAKMXhD8cQAHAQBxNQiQCAA4mAc/l+4TgCAA7mkDqH7xWOJQDgBA6rY/k+4XgCAFiawx/OIQDgJA4uYGUCAE4kAp7j+4PzCAA4mUNsH98bnEsAwAAOs218X3A+AQAsxeEPYwgAGMTBBqxEAMBAIuA+3w+MIwBgMIfcdb4XGEsAwAQOu/d8HzCeAACmcvjDHAIAJnHwATMJAJgoPQLSPz/MJABgstRDMPVzwyoEACwg7TBM+7ywIgEAAIEEACwi5VdxyueE1QkAWEj3w7H754NKBAAspush2fVzQVUCABbU7bDs9nmgAwEAAIEEACyqy6/mLp8DuhEAsLDqh2f164fOBAAsruohWvW6IYUAgAKqHabVrhcSCQAACCQAoIgqv6qrXCekEwBQyOqH6+rXB7wSAFDMqofsqtcFXCcAgKc5/KEeAQAFOXCBZwkAKGqVCFjlOoBtBAAUNvvwnf3/B/YTAFDcrEPY4Q+1CQBgM4c/1CcAoAEHMrCVAIAmRkWA2IAeBAA0cvbh7PCHPgQANHPWIe3wh14EAAAEEgDQ0NG/1v36h34EADR11KHt8IeeBAA09uzh7fCHvgQANLf3EHf4Q28CAAACCQAIsPXXvF//0J8AgBCPHuoOf8ggACDIZ4e7wx9yCAAIc+uQd/hDFgEAAIEEAAT69de+X/+QRwBAqH8PfYc/ZPry/eu3H7MvAgAYyxsAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAgkAAAgEACAAACCQAACCQAACCQAACAQAIAAAIJAAAIJAAAIJAAAIBAAgAAAgkAAAgkAAAg0P8BT2msZ1SW2V8AAAAASUVORK5CYII=">
+<link rel="manifest" id="manifestLink">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Karla:wght@400;500;700&display=swap');
+
+  :root{
+    --wine: #3a0f1c;
+    --wine-2: #4d1526;
+    --blush: #f2c9c2;
+    --rose: #c4536b;
+    --rose-deep: #9c3355;
+    --gold: #d9a86c;
+    --green: #8fae8b;
+    --ink: #fbeee9;
+    --ink-dim: #d9b8bd;
+    --line: rgba(217,168,108,0.28);
+  }
+
+  *{ box-sizing: border-box; }
+
+  body{
+    margin:0;
+    min-height:100vh;
+    background:
+      radial-gradient(ellipse at 15% -5%, rgba(196,83,107,0.28), transparent 55%),
+      radial-gradient(ellipse at 90% 5%, rgba(217,168,108,0.16), transparent 50%),
+      linear-gradient(180deg, var(--wine) 0%, var(--wine-2) 100%);
+    color: var(--ink);
+    font-family: 'Karla', sans-serif;
+    display:flex;
+    justify-content:center;
+    padding: 28px 16px 60px;
+  }
+
+  .petals{
+    position:fixed; inset:0; pointer-events:none; z-index:0;
+    background-image:
+      radial-gradient(2px 2px at 12% 22%, rgba(242,201,194,0.55), transparent),
+      radial-gradient(2px 2px at 82% 12%, rgba(217,168,108,0.5), transparent),
+      radial-gradient(1.5px 1.5px at 60% 75%, rgba(242,201,194,0.4), transparent),
+      radial-gradient(2px 2px at 30% 88%, rgba(217,168,108,0.45), transparent),
+      radial-gradient(1.5px 1.5px at 92% 65%, rgba(242,201,194,0.4), transparent),
+      radial-gradient(2px 2px at 45% 42%, rgba(217,168,108,0.4), transparent);
+    opacity: 0.6;
+  }
+
+  .app{ position:relative; z-index:1; width:100%; max-width: 480px; }
+
+  header.top{
+    text-align:center;
+    margin-bottom: 22px;
+  }
+  header.top .eyebrow{
+    font-size: 11px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  header.top h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 40px;
+    margin: 0;
+    line-height: 1.05;
+    color: var(--blush);
+  }
+  header.top .sub{
+    color: var(--ink-dim);
+    font-size: 13.5px;
+    margin-top: 8px;
+  }
+
+  .card{
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 22px;
+    backdrop-filter: blur(6px);
+  }
+
+  .field{ margin-bottom: 14px; }
+  .field label{
+    display:block;
+    font-size: 12px;
+    color: var(--ink-dim);
+    margin-bottom: 6px;
+    letter-spacing: 0.03em;
+  }
+  input[type=text]{
+    width:100%;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 11px 13px;
+    color: var(--ink);
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    outline:none;
+  }
+  input[type=text]:focus{ border-color: var(--gold); }
+  input[type=text]::placeholder{ color: rgba(251,238,233,0.4); }
+  input[type=file]{ display:none; }
+
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center;
+    gap: 8px;
+    background: linear-gradient(180deg, var(--rose), var(--rose-deep));
+    color: #fff3ee;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 14.5px;
+    cursor: pointer;
+    width: 100%;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:hover{ transform: translateY(-1px); box-shadow: 0 8px 20px rgba(156,51,85,0.35); }
+  .btn:active{ transform: translateY(0); }
+  .btn:disabled{ opacity:0.45; cursor:not-allowed; transform:none; box-shadow:none; }
+  .btn.ghost{
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--gold);
+  }
+  .btn.small{ width: auto; padding: 8px 14px; font-size: 13px; }
+  .btn.green{ background: linear-gradient(180deg, #a9c6a4, var(--green)); color: #1c2b1a; }
+
+  .btn-del{
+    display:inline-flex; align-items:center; gap:5px;
+    background: rgba(196,83,107,0.1);
+    border: 1px solid rgba(196,83,107,0.4);
+    color: var(--rose);
+    border-radius: 9px;
+    padding: 6px 11px;
+    font-family:'Karla', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .15s ease;
+  }
+  .btn-del:hover{ background: rgba(196,83,107,0.22); }
+
+  .btn-photo{
+    display:inline-flex; align-items:center; gap:6px;
+    background: rgba(217,168,108,0.12);
+    border: 1px solid var(--line);
+    color: var(--gold);
+    border-radius: 9px;
+    padding: 8px 12px;
+    font-size: 12.5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .row{ display:flex; gap: 10px; }
+  .row > *{ flex:1; }
+
+  .hint{ font-size: 12px; color: var(--ink-dim); margin-top: 10px; line-height:1.5; }
+
+  /* Avatars */
+  .avatars{
+    display:flex; justify-content:center; align-items:center; gap: 18px;
+    margin-bottom: 6px;
+  }
+  .avatar-wrap{ text-align:center; }
+  .avatar{
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    border: 2px solid var(--gold);
+    background: rgba(255,255,255,0.06);
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight:700;
+    color: var(--blush);
+    overflow:hidden;
+    cursor:pointer;
+    position:relative;
+  }
+  .avatar img{ width:100%; height:100%; object-fit:cover; }
+  .avatar.static{ cursor:default; }
+  .avatar-name{ font-size: 11px; color: var(--ink-dim); margin-top:5px; }
+  .avatar-plus{
+    position:absolute; bottom:-1px; right:-1px;
+    width:18px; height:18px; border-radius:50%;
+    background: var(--gold); color:#3a0f1c;
+    font-size: 12px; font-weight:900;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .heart-divider{ font-size: 16px; color: var(--rose); }
+
+  /* Tabs */
+  .tabs{
+    display:flex;
+    gap: 4px;
+    margin-bottom: 18px;
+    background: rgba(255,255,255,0.035);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 4px;
+  }
+  .tab{
+    flex:1;
+    text-align:center;
+    padding: 9px 4px;
+    border-radius: 9px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink-dim);
+    cursor:pointer;
+    transition: all .15s ease;
+  }
+  .tab.active{
+    background: rgba(196,83,107,0.28);
+    color: var(--blush);
+  }
+  .tab .badge{
+    display:inline-block;
+    background: var(--gold);
+    color: #3a0f1c;
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 1px 6px;
+    margin-left: 4px;
+    font-weight: 800;
+  }
+
+  .roombar{
+    display:flex; justify-content:space-between; align-items:center;
+    margin-bottom: 14px; font-size: 12.5px; color: var(--ink-dim);
+  }
+  .roombar b{ color: var(--blush); letter-spacing: 0.05em; }
+  .leave{ color: var(--gold); cursor:pointer; text-decoration:underline; }
+
+  .invite-card{
+    border: 1px dashed var(--gold);
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 18px;
+    text-align:center;
+    background: rgba(217,168,108,0.06);
+  }
+  .invite-card .code{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 28px;
+    font-weight:700;
+    letter-spacing: 0.12em;
+    color: var(--blush);
+    margin: 6px 0 12px;
+  }
+  .invite-copied{
+    font-size: 12px; color: var(--green); margin-top: 8px; min-height: 16px;
+  }
+
+  .category{
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    background: rgba(255,255,255,0.02);
+  }
+  .category h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:700;
+    font-style: italic;
+    font-size: 21px;
+    margin: 0 0 8px 0;
+    color: var(--blush);
+    display:flex; justify-content:space-between; align-items:center;
+    gap: 8px;
+  }
+  .category h3 .catname{ flex:1; }
+  .category h3 .count{
+    font-family:'Karla', sans-serif;
+    font-style: normal;
+    font-size: 11px;
+    color: var(--ink-dim);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .wish-item{
+    font-size: 14px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    display:flex; gap: 10px;
+    align-items:flex-start;
+  }
+  .wish-item:first-of-type{ border-top:none; }
+  .wish-item .thumb{
+    width: 40px; height:40px; border-radius:8px; object-fit:cover;
+    border: 1px solid var(--line); flex-shrink:0;
+  }
+  .wish-item .body{ flex:1; }
+  .wish-item .txt{ line-height:1.4; }
+  .wish-item .proof-tag{
+    font-size: 10.5px; color: var(--gold); margin-top: 3px;
+  }
+
+  .add-wish-box{ margin-top: 12px; }
+  .add-wish-row{ display:flex; gap:8px; }
+  .add-wish-row input{ flex:1; }
+  .add-extra-row{
+    display:flex; align-items:center; gap: 10px; margin-top: 10px; flex-wrap: wrap;
+  }
+  .preview-thumb{
+    width: 34px; height:34px; border-radius:7px; object-fit:cover; border:1px solid var(--gold);
+  }
+  .checkbox-line{
+    display:flex; align-items:center; gap:7px; font-size: 12px; color: var(--ink-dim);
+  }
+  .checkbox-line input{ accent-color: var(--rose); width:15px; height:15px; }
+  .submit-wish-btn{
+    margin-top: 10px;
+  }
+
+  .empty{
+    text-align:center;
+    padding: 30px 10px;
+    color: var(--ink-dim);
+    font-size: 13.5px;
+  }
+
+  /* Draw view */
+  .draw-stage{
+    text-align:center;
+    padding: 30px 10px 10px;
+  }
+  .well{
+    width: 108px; height: 108px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size: 44px;
+    background: radial-gradient(circle at 35% 30%, rgba(196,83,107,0.35), rgba(255,255,255,0.02));
+    border: 1px solid var(--line);
+    cursor:pointer;
+    transition: transform .2s ease;
+    user-select:none;
+  }
+  .well:hover{ transform: scale(1.05); }
+  .well.spin{ animation: beat 0.7s ease; }
+  @keyframes beat{
+    0%{ transform: scale(1); }
+    30%{ transform: scale(1.18); }
+    50%{ transform: scale(0.95); }
+    70%{ transform: scale(1.1); }
+    100%{ transform: scale(1); }
+  }
+
+  .reveal{
+    margin-top: 22px;
+    padding: 22px;
+    border-radius: 16px;
+    border: 1px solid var(--gold);
+    background: rgba(196,83,107,0.1);
+    text-align:left;
+    animation: fadein .4s ease;
+  }
+  @keyframes fadein{ from{ opacity:0; transform: translateY(6px);} to{opacity:1; transform:none;} }
+  .reveal img{
+    width:100%; max-height:220px; object-fit:cover; border-radius:12px; margin-bottom: 14px;
+    border: 1px solid var(--line);
+  }
+  .reveal .cat{
+    font-size: 11px;
+    text-transform:uppercase;
+    letter-spacing: 0.14em;
+    color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .reveal .txt{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 25px;
+    font-style: italic;
+    line-height:1.4;
+    color: var(--ink);
+  }
+  .reveal .from{
+    margin-top: 12px;
+    font-size: 12px;
+    color: var(--ink-dim);
+  }
+
+  .filter-row{
+    margin-bottom: 16px;
+  }
+  select{
+    width:100%;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 12px;
+    color: var(--ink);
+    font-family:'Karla', sans-serif;
+    font-size: 14px;
+  }
+
+  /* Todo & Done items */
+  .todo-item, .done-item{
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 15px 16px;
+    margin-bottom: 12px;
+    background: rgba(255,255,255,0.025);
+  }
+  .todo-item img, .done-item img{
+    width:100%; max-height:180px; object-fit:cover; border-radius:10px; margin-bottom:10px;
+    border: 1px solid var(--line);
+  }
+  .proof-row{
+    display:flex; gap:10px; margin-top: 10px;
+  }
+  .proof-row img{ width:64px; height:64px; border-radius:8px; object-fit:cover; border:1px solid var(--gold); }
+  .proof-label{ font-size:11px; color:var(--ink-dim); margin-bottom:4px; }
+  .todo-item .cat, .done-item .cat{
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .todo-item .txt{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--ink);
+    line-height: 1.35;
+    margin-bottom: 8px;
+  }
+  .done-item .txt{
+    font-family:'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-style: italic;
+    color: var(--ink-dim);
+    line-height: 1.35;
+    margin-bottom: 6px;
+    text-decoration: line-through;
+    text-decoration-color: rgba(217,168,108,0.5);
+  }
+  .todo-item .meta, .done-item .meta{
+    font-size: 12px;
+    color: var(--ink-dim);
+    margin-bottom: 10px;
+  }
+  .todo-item .status-line{
+    font-size: 12.5px;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .done-item .date{
+    font-size: 11px;
+    color: var(--ink-dim);
+    opacity: 0.7;
+  }
+
+  .sync-note{
+    text-align:center;
+    font-size: 11px;
+    color: var(--ink-dim);
+    margin-top: 18px;
+    opacity: 0.75;
+  }
+</style>
+</head>
+<body>
+<div class="petals"></div>
+<div class="app" id="app"></div>
+
+<script>
+const app = document.getElementById('app');
+
+let state = {
+  screen: 'entry', // entry | main
+  roomCode: '',
+  name: '',
+  tab: 'mine', // mine | draw | todo | done
+  drawFilter: 'any',
+  revealedWish: null,
+  roomData: null
+};
+
+// draft data that lives outside of render() so it survives re-renders untouched
+let drafts = {
+  newCategory: '',
+  wishByCat: {}, // { catId: { text, image, proofRequired } }
+};
+let proofDrafts = {}; // { wishId: imageDataUrl }
+
+// ---------- typing-safe rendering ----------
+let typingActive = false;
+let pendingRoomData = null;
+
+document.addEventListener('focusin', (e) => {
+  const t = e.target;
+  if(t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')){
+    typingActive = true;
+  }
+});
+document.addEventListener('focusout', (e) => {
+  typingActive = false;
+  if(pendingRoomData){
+    state.roomData = pendingRoomData;
+    pendingRoomData = null;
+    render();
+  }
+});
+
+// ---------- lokale Datenbank (IndexedDB) ----------
+// Jede Rauminfo wird zusätzlich lokal auf dem Gerät gespeichert (echte Browser-Datenbank,
+// kein flüchtiger Zwischenspeicher). Das macht die App offline nutzbar und sorgt für
+// einen sofortigen Start, während im Hintergrund mit dem Partner-Gerät abgeglichen wird.
+const DB_NAME = 'herzensangelegenheit-db';
+const DB_STORE = 'rooms';
+let dbPromise = null;
+
+function openDB(){
+  if(dbPromise) return dbPromise;
+  dbPromise = new Promise((resolve, reject) => {
+    const req = indexedDB.open(DB_NAME, 1);
+    req.onupgradeneeded = () => {
+      const db = req.result;
+      if(!db.objectStoreNames.contains(DB_STORE)){
+        db.createObjectStore(DB_STORE, { keyPath: 'code' });
+      }
+    };
+    req.onsuccess = () => resolve(req.result);
+    req.onerror = () => reject(req.error);
+  });
+  return dbPromise;
+}
+
+async function dbSaveLocal(code, data){
+  try{
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(DB_STORE, 'readwrite');
+      tx.objectStore(DB_STORE).put({ code: code.toUpperCase(), data, updatedAt: Date.now() });
+      tx.oncomplete = () => resolve(true);
+      tx.onerror = () => reject(tx.error);
+    });
+  }catch(e){ return false; }
+}
+
+async function dbLoadLocal(code){
+  try{
+    const db = await openDB();
+    return new Promise((resolve, reject) => {
+      const tx = db.transaction(DB_STORE, 'readonly');
+      const req = tx.objectStore(DB_STORE).get(code.toUpperCase());
+      req.onsuccess = () => resolve(req.result ? req.result.data : null);
+      req.onerror = () => reject(req.error);
+    });
+  }catch(e){ return null; }
+}
+
+// ---------- storage helpers ----------
+// Online-Abgleich läuft über den geteilten Cloud-Speicher (window.storage), damit beide
+// Partner denselben Stand sehen. Jede erfolgreiche Lese-/Schreiboperation wird zusätzlich
+// in die lokale IndexedDB gespiegelt. Ist kein Internet verfügbar, greift die App auf den
+// zuletzt gespeicherten lokalen Stand zurück, statt einfach leer zu bleiben.
+let isOffline = false;
+
+function roomKey(code){ return 'herzensangelegenheit-room-' + code.toUpperCase(); }
+
+async function loadRoom(code){
+  try{
+    const res = await window.storage.get(roomKey(code), true);
+    const data = res ? JSON.parse(res.value) : null;
+    isOffline = false;
+    if(data) await dbSaveLocal(code, data);
+    return data;
+  }catch(e){
+    isOffline = true;
+    const local = await dbLoadLocal(code);
+    return local;
+  }
+}
+
+async function saveRoom(code, data){
+  await dbSaveLocal(code, data);
+  try{
+    await window.storage.set(roomKey(code), JSON.stringify(data), true);
+    isOffline = false;
+  }catch(e){
+    isOffline = true;
+    console.error('Online-Speichern fehlgeschlagen, lokal gesichert', e);
+  }
+}
+
+function emptyRoom(){
+  return { players: [], profiles: {}, categories: [], wishes: [] };
+}
+
+function genCode(){
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  let c = '';
+  for(let i=0;i<5;i++) c += chars[Math.floor(Math.random()*chars.length)];
+  return c;
+}
+function uid(){ return Math.random().toString(36).slice(2,10); }
+
+// wish.status: 'available' | 'in_progress' | 'completed'
+// wish.image: optional dataURL reference picture
+// wish.proofRequired: bool - creator wants a proof photo before it counts as done
+// wish.drawnBy / wish.drawerDone / wish.proofImage / wish.completedAt
+
+// ---------- image helper ----------
+function resizeImage(file, maxDim, quality){
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const img = new Image();
+      img.onload = () => {
+        let w = img.width, h = img.height;
+        if(w > h){ if(w > maxDim){ h = Math.round(h * maxDim / w); w = maxDim; } }
+        else { if(h > maxDim){ w = Math.round(w * maxDim / h); h = maxDim; } }
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        resolve(canvas.toDataURL('image/jpeg', quality || 0.72));
+      };
+      img.onerror = reject;
+      img.src = e.target.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+// ---------- rendering ----------
+function render(){
+  if(state.screen === 'entry') renderEntry();
+  else renderMain();
+}
+
+function renderEntry(){
+  const params = new URLSearchParams(window.location.search);
+  if(!state.roomCode && params.get('raum')){
+    state.roomCode = params.get('raum').toUpperCase();
+  }
+
+  app.innerHTML = `
+    <header class="top">
+      <div class="eyebrow">Für zwei Herzen</div>
+      <h1>Herzensangelegenheit</h1>
+      <div class="sub">Legt Wünsche in Kategorien ab und zieht überraschend<br>einen Herzenswunsch des anderen.</div>
+    </header>
+    <div class="card">
+      <div class="field">
+        <label>Dein Name</label>
+        <input type="text" id="nameInput" placeholder="z.B. Alex" value="${escapeAttr(state.name)}">
+      </div>
+      <div class="field">
+        <label>Raum-Code</label>
+        <input type="text" id="codeInput" placeholder="z.B. 7QX2M" maxlength="8" style="text-transform:uppercase" value="${escapeAttr(state.roomCode)}">
+      </div>
+      <div class="row" style="margin-top:16px;">
+        <button class="btn" id="joinBtn">Raum betreten</button>
+      </div>
+      <button class="btn ghost" id="createBtn" style="margin-top:10px;">Neuen Raum erstellen</button>
+      <div class="hint">Erstellt eine Person einen Raum, kann sie die zweite Person direkt aus der App heraus einladen. Beide öffnen diese Seite und tragen denselben Code ein — funktioniert auf iPhone, Android und am Computer.</div>
+      <div id="installHolder"></div>
+    </div>
+  `;
+
+  document.getElementById('nameInput').oninput = e => state.name = e.target.value;
+  document.getElementById('codeInput').oninput = e => state.roomCode = e.target.value.toUpperCase();
+
+  document.getElementById('createBtn').onclick = async () => {
+    const code = genCode();
+    state.roomCode = code;
+    document.getElementById('codeInput').value = code;
+    await enterRoom(true);
+  };
+  document.getElementById('joinBtn').onclick = async () => {
+    await enterRoom(false);
+  };
+
+  renderInstallButton();
+}
+
+async function enterRoom(isNew){
+  if(!state.name.trim()){ alert('Bitte gib deinen Namen ein.'); return; }
+  if(!state.roomCode.trim()){ alert('Bitte gib einen Raum-Code ein.'); return; }
+
+  let data = await loadRoom(state.roomCode);
+  if(!data) data = emptyRoom();
+  if(!data.profiles) data.profiles = {};
+
+  if(!data.players.includes(state.name)){
+    if(data.players.length >= 2 && !isNew){
+      const proceed = confirm('Dieser Raum hat bereits zwei Namen. Trotzdem mit deinem Namen beitreten?');
+      if(!proceed) return;
+    }
+    data.players.push(state.name);
+  }
+
+  await saveRoom(state.roomCode, data);
+  state.roomData = data;
+  state.screen = 'main';
+  render();
+  startPolling();
+}
+
+function escapeAttr(s){
+  return (s||'').replace(/"/g,'&quot;');
+}
+function escapeHtml(s){
+  return (s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+}
+function formatDate(iso){
+  if(!iso) return '';
+  const d = new Date(iso);
+  return d.toLocaleDateString('de-DE', { day:'2-digit', month:'2-digit', year:'numeric' }) + ' · ' +
+         d.toLocaleTimeString('de-DE', { hour:'2-digit', minute:'2-digit' });
+}
+function initials(name){
+  return (name||'?').trim().slice(0,1).toUpperCase();
+}
+
+// ---------- polling (skips re-render while someone is typing) ----------
+let pollTimer = null;
+function startPolling(){
+  if(pollTimer) clearInterval(pollTimer);
+  pollTimer = setInterval(async () => {
+    const fresh = await loadRoom(state.roomCode);
+    if(!fresh) return;
+    const changed = JSON.stringify(fresh) !== JSON.stringify(state.roomData);
+    if(!changed) return;
+    if(typingActive){
+      pendingRoomData = fresh;
+    } else {
+      state.roomData = fresh;
+      if(state.screen === 'main') render();
+    }
+  }, 3500);
+}
+
+// ---------- main screen ----------
+function renderMain(){
+  const data = state.roomData || emptyRoom();
+  const otherPlayer = data.players.find(p => p !== state.name);
+
+  const todoCount = data.wishes.filter(w => w.status === 'in_progress').length;
+  const doneCount = data.wishes.filter(w => w.status === 'completed').length;
+
+  const myAvatar = (data.profiles && data.profiles[state.name] && data.profiles[state.name].avatar) || null;
+  const otherAvatar = otherPlayer && data.profiles && data.profiles[otherPlayer] && data.profiles[otherPlayer].avatar;
+
+  app.innerHTML = `
+    <header class="top">
+      <div class="eyebrow">Raum ${escapeHtml(state.roomCode)}</div>
+      <h1>Herzensangelegenheit</h1>
+    </header>
+
+    <div class="avatars">
+      <div class="avatar-wrap">
+        <div class="avatar" id="myAvatarBtn">
+          ${myAvatar ? `<img src="${myAvatar}">` : initials(state.name)}
+          <div class="avatar-plus">+</div>
+        </div>
+        <div class="avatar-name">${escapeHtml(state.name)} (du)</div>
+      </div>
+      <div class="heart-divider">♥</div>
+      <div class="avatar-wrap">
+        <div class="avatar static">
+          ${otherPlayer ? (otherAvatar ? `<img src="${otherAvatar}">` : initials(otherPlayer)) : '?'}
+        </div>
+        <div class="avatar-name">${otherPlayer ? escapeHtml(otherPlayer) : 'wartet …'}</div>
+      </div>
+    </div>
+    <input type="file" id="avatarFile" accept="image/*">
+
+    <div class="roombar">
+      <div>${isOffline ? '📴 Offline · lokal gespeichert' : (otherPlayer ? 'Verbunden mit ' + escapeHtml(otherPlayer) : 'Zweite Person fehlt noch')}</div>
+      <div class="leave" id="leaveBtn">Raum verlassen</div>
+    </div>
+
+    ${!otherPlayer ? `
+    <div class="invite-card">
+      <div style="font-size:12.5px; color:var(--ink-dim);">Lade deinen Partner / deine Partnerin ein</div>
+      <div class="code">${escapeHtml(state.roomCode)}</div>
+      <button class="btn small" id="inviteBtn" style="width:auto;">💌 Einladung teilen</button>
+      <div class="invite-copied" id="inviteCopied"></div>
+    </div>` : ''}
+
+    <div class="tabs">
+      <div class="tab ${state.tab==='mine'?'active':''}" id="tabMine">Wünsche</div>
+      <div class="tab ${state.tab==='draw'?'active':''}" id="tabDraw">Ziehen</div>
+      <div class="tab ${state.tab==='todo'?'active':''}" id="tabTodo">ToDo${todoCount ? `<span class="badge">${todoCount}</span>` : ''}</div>
+      <div class="tab ${state.tab==='done'?'active':''}" id="tabDone">Erledigt${doneCount ? `<span class="badge">${doneCount}</span>` : ''}</div>
+    </div>
+
+    <div id="tabContent"></div>
+    <div class="sync-note">Wird alle paar Sekunden automatisch abgeglichen</div>
+  `;
+
+  document.getElementById('leaveBtn').onclick = () => {
+    if(pollTimer) clearInterval(pollTimer);
+    state.screen = 'entry';
+    state.revealedWish = null;
+    render();
+  };
+  document.getElementById('tabMine').onclick = () => { state.tab='mine'; render(); };
+  document.getElementById('tabDraw').onclick = () => { state.tab='draw'; state.revealedWish=null; render(); };
+  document.getElementById('tabTodo').onclick = () => { state.tab='todo'; render(); };
+  document.getElementById('tabDone').onclick = () => { state.tab='done'; render(); };
+
+  document.getElementById('myAvatarBtn').onclick = () => {
+    document.getElementById('avatarFile').click();
+  };
+  document.getElementById('avatarFile').onchange = async (e) => {
+    const file = e.target.files[0];
+    if(!file) return;
+    const dataUrl = await resizeImage(file, 200, 0.75);
+    const data2 = await loadRoom(state.roomCode) || emptyRoom();
+    if(!data2.profiles) data2.profiles = {};
+    data2.profiles[state.name] = { avatar: dataUrl };
+    await saveRoom(state.roomCode, data2);
+    state.roomData = data2;
+    render();
+  };
+
+  const inviteBtn = document.getElementById('inviteBtn');
+  if(inviteBtn){
+    inviteBtn.onclick = async () => {
+      const link = window.location.origin + window.location.pathname + '?raum=' + encodeURIComponent(state.roomCode);
+      const text = `Ich lade dich zu unserer "Herzensangelegenheit" ein 💌\nRaum-Code: ${state.roomCode}\nÖffne die App und trage den Code ein: ${link}`;
+      let done = false;
+      if(navigator.share){
+        try{ await navigator.share({ title: 'Herzensangelegenheit', text }); done = true; }catch(e){ /* user cancelled or unsupported */ }
+      }
+      if(!done && navigator.clipboard){
+        try{ await navigator.clipboard.writeText(text); done = true; }catch(e){ /* fall through */ }
+      }
+      if(!done){
+        try{
+          const ta = document.createElement('textarea');
+          ta.value = text;
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          document.execCommand('copy');
+          document.body.removeChild(ta);
+          done = true;
+        }catch(e){ /* ignore */ }
+      }
+      const note = document.getElementById('inviteCopied');
+      if(note) note.textContent = done ? 'In die Zwischenablage kopiert – jetzt einfach einfügen und senden.' : ('Code manuell teilen: ' + state.roomCode);
+    };
+  }
+
+  if(state.tab === 'mine') renderMineTab();
+  else if(state.tab === 'draw') renderDrawTab();
+  else if(state.tab === 'todo') renderTodoTab();
+  else renderDoneTab();
+}
+
+function renderMineTab(){
+  const data = state.roomData || emptyRoom();
+  const container = document.getElementById('tabContent');
+
+  const myCats = data.categories;
+  let catsHtml = '';
+  if(myCats.length === 0){
+    catsHtml = `<div class="empty">Noch keine Kategorien. Leg unten deine erste an — zum Beispiel „Romantische Abende" oder „Kleine Aufmerksamkeiten".</div>`;
+  } else {
+    catsHtml = myCats.map(cat => {
+      const totalInCat = data.wishes.filter(w => w.categoryId === cat.id).length;
+      const myWishes = data.wishes.filter(w => w.categoryId === cat.id && w.owner === state.name && w.status === 'available');
+      const wishesHtml = myWishes.length
+        ? myWishes.map(w => `
+            <div class="wish-item">
+              ${w.image ? `<img class="thumb" src="${w.image}">` : ''}
+              <div class="body">
+                <div class="txt">${escapeHtml(w.text)}</div>
+                ${w.proofRequired ? `<div class="proof-tag">📸 Beweisfoto erwünscht</div>` : ''}
+              </div>
+              <button class="btn-del" data-del="${w.id}">🗑 Löschen</button>
+            </div>`).join('')
+        : `<div class="wish-item"><span class="txt" style="color:var(--ink-dim)">Noch keine offenen Wünsche in dieser Kategorie.</span></div>`;
+
+      const deleteLink = totalInCat === 0
+        ? `<button class="btn-del" data-delcat="${cat.id}">🗑 Kategorie löschen</button>`
+        : '';
+
+      const draft = drafts.wishByCat[cat.id] || { text:'', image:null, proofRequired:false };
+
+      return `
+        <div class="category">
+          <h3><span class="catname">${escapeHtml(cat.name)}</span><span class="count">${myWishes.length} offen</span></h3>
+          ${wishesHtml}
+          <div class="add-wish-box">
+            <div class="add-wish-row">
+              <input type="text" placeholder="Neuen Wunsch hinzufügen …" data-catinput="${cat.id}" value="${escapeAttr(draft.text)}">
+            </div>
+            <div class="add-extra-row">
+              <label class="btn-photo">📷 Bild
+                <input type="file" accept="image/*" data-catimage="${cat.id}">
+              </label>
+              ${draft.image ? `<img class="preview-thumb" src="${draft.image}">` : ''}
+              <label class="checkbox-line">
+                <input type="checkbox" data-catproof="${cat.id}" ${draft.proofRequired ? 'checked' : ''}>
+                Beweisfoto beim Erledigen erwünscht
+              </label>
+            </div>
+            <button class="btn small submit-wish-btn" data-addwish="${cat.id}" style="width:100%;">Wunsch hinzufügen</button>
+          </div>
+          ${deleteLink ? `<div style="text-align:right; margin-top:12px;">${deleteLink}</div>` : ''}
+        </div>`;
+    }).join('');
+  }
+
+  container.innerHTML = `
+    ${catsHtml}
+    <div class="card">
+      <div class="field" style="margin-bottom:10px;">
+        <label>Neue Kategorie</label>
+        <div class="row">
+          <input type="text" id="newCatInput" placeholder="z.B. Verwöhn-Momente" value="${escapeAttr(drafts.newCategory)}">
+          <button class="btn small" id="addCatBtn" style="width:auto;">Anlegen</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.getElementById('newCatInput').oninput = e => drafts.newCategory = e.target.value;
+
+  document.getElementById('addCatBtn').onclick = async () => {
+    const val = (drafts.newCategory || '').trim();
+    if(!val) return;
+    const data2 = await loadRoom(state.roomCode) || emptyRoom();
+    data2.categories.push({ id: uid(), name: val });
+    await saveRoom(state.roomCode, data2);
+    state.roomData = data2;
+    drafts.newCategory = '';
+    render();
+  };
+
+  container.querySelectorAll('[data-catinput]').forEach(inp => {
+    inp.oninput = (e) => {
+      const catId = inp.getAttribute('data-catinput');
+      if(!drafts.wishByCat[catId]) drafts.wishByCat[catId] = { text:'', image:null, proofRequired:false };
+      drafts.wishByCat[catId].text = e.target.value;
+    };
+  });
+
+  container.querySelectorAll('[data-catimage]').forEach(inp => {
+    inp.onchange = async (e) => {
+      const catId = inp.getAttribute('data-catimage');
+      const file = e.target.files[0];
+      if(!file) return;
+      const dataUrl = await resizeImage(file, 480, 0.7);
+      if(!drafts.wishByCat[catId]) drafts.wishByCat[catId] = { text:'', image:null, proofRequired:false };
+      drafts.wishByCat[catId].image = dataUrl;
+      render();
+    };
+  });
+
+  container.querySelectorAll('[data-catproof]').forEach(cb => {
+    cb.onchange = (e) => {
+      const catId = cb.getAttribute('data-catproof');
+      if(!drafts.wishByCat[catId]) drafts.wishByCat[catId] = { text:'', image:null, proofRequired:false };
+      drafts.wishByCat[catId].proofRequired = e.target.checked;
+    };
+  });
+
+  container.querySelectorAll('[data-addwish]').forEach(btn => {
+    btn.onclick = async () => {
+      const catId = btn.getAttribute('data-addwish');
+      const draft = drafts.wishByCat[catId] || { text:'', image:null, proofRequired:false };
+      const val = (draft.text || '').trim();
+      if(!val) return;
+      const data2 = await loadRoom(state.roomCode) || emptyRoom();
+      data2.wishes.push({
+        id: uid(), categoryId: catId, text: val, owner: state.name,
+        image: draft.image || null, proofRequired: !!draft.proofRequired,
+        status: 'available', drawnBy: null, drawerDone: false, proofImage: null, completedAt: null
+      });
+      await saveRoom(state.roomCode, data2);
+      state.roomData = data2;
+      delete drafts.wishByCat[catId];
+      render();
+    };
+  });
+
+  container.querySelectorAll('[data-del]').forEach(el => {
+    el.onclick = async () => {
+      if(!confirm('Diesen Wunsch wirklich löschen?')) return;
+      const wishId = el.getAttribute('data-del');
+      const data2 = await loadRoom(state.roomCode) || emptyRoom();
+      data2.wishes = data2.wishes.filter(w => w.id !== wishId);
+      await saveRoom(state.roomCode, data2);
+      state.roomData = data2;
+      render();
+    };
+  });
+
+  container.querySelectorAll('[data-delcat]').forEach(el => {
+    el.onclick = async () => {
+      const catId = el.getAttribute('data-delcat');
+      const data2 = await loadRoom(state.roomCode) || emptyRoom();
+      const stillHasWishes = data2.wishes.some(w => w.categoryId === catId);
+      if(stillHasWishes){
+        alert('Diese Kategorie enthält inzwischen Wünsche und kann nicht gelöscht werden.');
+        state.roomData = data2;
+        render();
+        return;
+      }
+      if(!confirm('Diese Kategorie wirklich löschen?')) return;
+      data2.categories = data2.categories.filter(c => c.id !== catId);
+      await saveRoom(state.roomCode, data2);
+      state.roomData = data2;
+      render();
+    };
+  });
+}
+
+function renderDrawTab(){
+  const data = state.roomData || emptyRoom();
+  const container = document.getElementById('tabContent');
+  const otherPlayer = data.players.find(p => p !== state.name);
+
+  if(!otherPlayer){
+    container.innerHTML = `<div class="empty">Sobald die zweite Person diesem Raum beigetreten ist, könnt ihr Wünsche voneinander ziehen.</div>`;
+    return;
+  }
+
+  const partnerWishes = data.wishes.filter(w => w.owner === otherPlayer && w.status === 'available');
+  const categories = data.categories.filter(c => partnerWishes.some(w => w.categoryId === c.id));
+
+  const filterOptions = `<option value="any">Alle Kategorien</option>` +
+    categories.map(c => `<option value="${c.id}" ${state.drawFilter===c.id?'selected':''}>${escapeHtml(c.name)}</option>`).join('');
+
+  const pool = state.drawFilter === 'any'
+    ? partnerWishes
+    : partnerWishes.filter(w => w.categoryId === state.drawFilter);
+
+  container.innerHTML = `
+    <div class="filter-row">
+      <select id="filterSelect">${filterOptions}</select>
+    </div>
+    <div class="card draw-stage">
+      <div class="well" id="wellBtn">💌</div>
+      <div style="color:var(--ink-dim); font-size:13.5px;">
+        ${pool.length > 0
+          ? `Tippe auf den Brief, um einen Wunsch von ${escapeHtml(otherPlayer)} zu ziehen.`
+          : `${escapeHtml(otherPlayer)} hat gerade keine offenen Wünsche in dieser Auswahl.`}
+      </div>
+      <div id="revealArea"></div>
+    </div>
+  `;
+
+  document.getElementById('filterSelect').onchange = (e) => {
+    state.drawFilter = e.target.value;
+    state.revealedWish = null;
+    render();
+  };
+
+  if(state.revealedWish){
+    const w = state.revealedWish;
+    const cat = data.categories.find(c => c.id === w.categoryId);
+    document.getElementById('revealArea').innerHTML = `
+      <div class="reveal">
+        ${w.image ? `<img src="${w.image}">` : ''}
+        <div class="cat">${cat ? escapeHtml(cat.name) : 'Wunsch'}</div>
+        <div class="txt">„${escapeHtml(w.text)}"</div>
+        <div class="from">Wunsch von ${escapeHtml(otherPlayer)} · wandert jetzt in deine ToDo-Liste</div>
+      </div>
+    `;
+  }
+
+  const well = document.getElementById('wellBtn');
+  well.onclick = async () => {
+    if(pool.length === 0) return;
+    well.classList.add('spin');
+    setTimeout(() => well.classList.remove('spin'), 700);
+    const pick = pool[Math.floor(Math.random() * pool.length)];
+
+    const data2 = await loadRoom(state.roomCode) || emptyRoom();
+    const wishRef = data2.wishes.find(w => w.id === pick.id);
+    if(wishRef && wishRef.status === 'available'){
+      wishRef.status = 'in_progress';
+      wishRef.drawnBy = state.name;
+      wishRef.drawerDone = false;
+      state.revealedWish = wishRef;
+      await saveRoom(state.roomCode, data2);
+      state.roomData = data2;
+    }
+    render();
+  };
+}
+
+function renderTodoTab(){
+  const data = state.roomData || emptyRoom();
+  const container = document.getElementById('tabContent');
+  const items = data.wishes.filter(w => w.status === 'in_progress');
+
+  if(items.length === 0){
+    container.innerHTML = `<div class="empty">Aktuell keine offenen Aufgaben. Zieht unter „Ziehen" einen Wunsch voneinander.</div>`;
+    return;
+  }
+
+  container.innerHTML = items.map(w => {
+    const cat = data.categories.find(c => c.id === w.categoryId);
+    const isDrawer = w.drawnBy === state.name;
+    const isOwner = w.owner === state.name;
+    const proofPending = proofDrafts[w.id];
+
+    let statusLine = '';
+    let actionHtml = '';
+
+    if(!w.drawerDone){
+      if(isDrawer){
+        statusLine = `Du hast diesen Wunsch von ${escapeHtml(w.owner)} gezogen.`;
+        if(w.proofRequired){
+          actionHtml = `
+            <label class="btn-photo" style="margin-bottom:8px; display:inline-flex;">📸 Beweisfoto aufnehmen
+              <input type="file" accept="image/*" capture="environment" data-proofinput="${w.id}">
+            </label>
+            ${proofPending ? `<div style="margin:8px 0;"><img class="preview-thumb" src="${proofPending}" style="width:56px;height:56px;"></div>` : ''}
+            <button class="btn green small" data-drawerdone="${w.id}" ${proofPending ? '' : 'disabled'}>Ich habe es erledigt</button>
+          `;
+        } else {
+          actionHtml = `<button class="btn green small" data-drawerdone="${w.id}">Ich habe es erledigt</button>`;
+        }
+      } else {
+        statusLine = `${escapeHtml(w.drawnBy)} kümmert sich gerade darum.`;
+      }
+    } else {
+      if(isOwner){
+        statusLine = `${escapeHtml(w.drawnBy)} sagt: erledigt! Bestätige, wenn es stimmt.`;
+        actionHtml = `<button class="btn green small" data-confirm="${w.id}">Als abgeschlossen markieren</button>`;
+      } else {
+        statusLine = `Warte auf Bestätigung von ${escapeHtml(w.owner)}.`;
+      }
+    }
+
+    return `
+      <div class="todo-item">
+        ${w.image ? `<img src="${w.image}">` : ''}
+        <div class="cat">${cat ? escapeHtml(cat.name) : 'Wunsch'}</div>
+        <div class="txt">„${escapeHtml(w.text)}"</div>
+        <div class="meta">Gewünscht von ${escapeHtml(w.owner)}</div>
+        <div class="status-line">${statusLine}</div>
+        ${actionHtml}
+      </div>
+    `;
+  }).join('');
+
+  container.querySelectorAll('[data-proofinput]').forEach(inp => {
+    inp.onchange = async (e) => {
+      const wishId = inp.getAttribute('data-proofinput');
+      const file = e.target.files[0];
+      if(!file) return;
+      const dataUrl = await resizeImage(file, 480, 0.7);
+      proofDrafts[wishId] = dataUrl;
+      render();
+    };
+  });
+
+  container.querySelectorAll('[data-drawerdone]').forEach(btn => {
+    btn.onclick = async () => {
+      const wishId = btn.getAttribute('data-drawerdone');
+      const data2 = await loadRoom(state.roomCode) || emptyRoom();
+      const w = data2.wishes.find(w => w.id === wishId);
+      if(w){
+        w.drawerDone = true;
+        if(proofDrafts[wishId]) w.proofImage = proofDrafts[wishId];
+      }
+      await saveRoom(state.roomCode, data2);
+      state.roomData = data2;
+      delete proofDrafts[wishId];
+      render();
+    };
+  });
+
+  container.querySelectorAll('[data-confirm]').forEach(btn => {
+    btn.onclick = async () => {
+      const wishId = btn.getAttribute('data-confirm');
+      const data2 = await loadRoom(state.roomCode) || emptyRoom();
+      const w = data2.wishes.find(w => w.id === wishId);
+      if(w){
+        w.status = 'completed';
+        w.completedAt = new Date().toISOString();
+      }
+      await saveRoom(state.roomCode, data2);
+      state.roomData = data2;
+      render();
+    };
+  });
+}
+
+function renderDoneTab(){
+  const data = state.roomData || emptyRoom();
+  const container = document.getElementById('tabContent');
+  const items = data.wishes
+    .filter(w => w.status === 'completed')
+    .sort((a,b) => new Date(b.completedAt) - new Date(a.completedAt));
+
+  if(items.length === 0){
+    container.innerHTML = `<div class="empty">Hier sammeln sich eure eingelösten Herzenswünsche.</div>`;
+    return;
+  }
+
+  container.innerHTML = items.map(w => {
+    const cat = data.categories.find(c => c.id === w.categoryId);
+    return `
+      <div class="done-item">
+        <div class="cat">${cat ? escapeHtml(cat.name) : 'Wunsch'}</div>
+        <div class="txt">„${escapeHtml(w.text)}"</div>
+        <div class="meta">${escapeHtml(w.owner)} wünschte sich das · erfüllt von ${escapeHtml(w.drawnBy)}</div>
+        ${(w.image || w.proofImage) ? `
+          <div class="proof-row">
+            ${w.image ? `<div><div class="proof-label">Wunsch</div><img src="${w.image}"></div>` : ''}
+            ${w.proofImage ? `<div><div class="proof-label">Beweis</div><img src="${w.proofImage}"></div>` : ''}
+          </div>` : ''}
+        <div class="date" style="margin-top:8px;">${formatDate(w.completedAt)}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+// ---------- PWA: Manifest ----------
+// Baut das App-Manifest zur Laufzeit (Name, Icons, Startmodus) und hängt es in den <head>,
+// damit Chrome/Android und Safari/iOS die Seite als installierbare App erkennen.
+const APP_MANIFEST = {
+  name: 'Herzensangelegenheit',
+  short_name: 'Herzensangel.',
+  description: 'Wunsch-Spiel für zwei',
+  start_url: window.location.pathname + window.location.search,
+  scope: window.location.pathname,
+  display: 'standalone',
+  background_color: '#3a0f1c',
+  theme_color: '#3a0f1c',
+  icons: [
+    { src: document.querySelector('link[rel="apple-touch-icon"]').href, sizes: '192x192', type: 'image/png', purpose: 'any maskable' },
+    { src: document.querySelectorAll('link[rel="icon"]')[1].href, sizes: '512x512', type: 'image/png', purpose: 'any maskable' }
+  ]
+};
+const manifestBlob = new Blob([JSON.stringify(APP_MANIFEST)], { type: 'application/manifest+json' });
+document.getElementById('manifestLink').href = URL.createObjectURL(manifestBlob);
+
+// ---------- PWA: Service Worker (Offline-Cache für die App-Hülle) ----------
+if('serviceWorker' in navigator){
+  const swCode = `
+    const CACHE = 'herzensangelegenheit-v1';
+    self.addEventListener('install', (e) => {
+      self.skipWaiting();
+    });
+    self.addEventListener('activate', (e) => {
+      self.clients.claim();
+    });
+    self.addEventListener('fetch', (e) => {
+      if(e.request.method !== 'GET') return;
+      e.respondWith(
+        caches.open(CACHE).then(async (cache) => {
+          const cached = await cache.match(e.request);
+          const network = fetch(e.request).then((res) => {
+            if(res && res.status === 200) cache.put(e.request, res.clone());
+            return res;
+          }).catch(() => cached);
+          return cached || network;
+        })
+      );
+    });
+  `;
+  const swBlob = new Blob([swCode], { type: 'application/javascript' });
+  const swUrl = URL.createObjectURL(swBlob);
+  navigator.serviceWorker.register(swUrl).catch(() => { /* Offline-Cache optional, kein Problem falls nicht verfügbar */ });
+}
+
+// ---------- PWA: "App installieren"-Button ----------
+let deferredInstallPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  const btn = document.getElementById('installBtn');
+  if(btn) btn.style.display = 'block';
+});
+
+function renderInstallButton(){
+  const holder = document.getElementById('installHolder');
+  if(!holder) return;
+  const alreadyInstalled = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+  if(alreadyInstalled){ holder.innerHTML = ''; return; }
+  holder.innerHTML = `<button class="btn ghost" id="installBtn" style="display:none; margin-top:10px;">📲 Als App installieren</button>`;
+  const btn = document.getElementById('installBtn');
+  if(deferredInstallPrompt) btn.style.display = 'block';
+  btn.onclick = async () => {
+    if(deferredInstallPrompt){
+      deferredInstallPrompt.prompt();
+      await deferredInstallPrompt.userChoice;
+      deferredInstallPrompt = null;
+      btn.style.display = 'none';
+    } else {
+      alert('Tippe im Browser-Menü auf „Zum Startbildschirm hinzufügen" bzw. „App installieren", um Herzensangelegenheit wie eine echte App zu nutzen.');
+    }
+  };
+}
+
+render();
+</script>
+</body>
+</html>
