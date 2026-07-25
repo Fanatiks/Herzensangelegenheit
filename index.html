@@ -712,10 +712,29 @@ async function enterRoom(isNew){
   }
 
   await saveRoom(state.roomCode, data);
+  await saveMyProfile(state.name, state.roomCode);
   state.roomData = data;
   state.screen = 'main';
   render();
   startPolling();
+}
+
+// ---------- persönliches Profil (Name + zuletzt betretener Raum) ----------
+// Persönlich (nicht geteilt) über window.storage gemerkt, damit man beim nächsten Öffnen
+// nicht erneut Name und Raum-Code eintippen muss.
+const MY_PROFILE_KEY = 'herzensangelegenheit-my-profile';
+
+async function loadMyProfile(){
+  try{
+    const res = await window.storage.get(MY_PROFILE_KEY, false);
+    return res ? JSON.parse(res.value) : null;
+  }catch(e){ return null; }
+}
+
+async function saveMyProfile(name, roomCode){
+  try{
+    await window.storage.set(MY_PROFILE_KEY, JSON.stringify({ name, lastRoomCode: roomCode }), false);
+  }catch(e){ /* nicht kritisch, App funktioniert trotzdem */ }
 }
 
 function escapeAttr(s){
@@ -735,22 +754,34 @@ function initials(name){
 }
 
 // ---------- polling (skips re-render while someone is typing) ----------
+// Kurzes Intervall, damit neue Kategorien/Wünsche beim Partner schnell ankommen.
+// Zusätzlich wird sofort neu geladen, sobald die App/der Tab wieder sichtbar wird
+// oder man selbst zwischen den Tabs wechselt.
 let pollTimer = null;
+
+async function pollOnce(){
+  const fresh = await loadRoom(state.roomCode);
+  if(!fresh) return;
+  const changed = JSON.stringify(fresh) !== JSON.stringify(state.roomData);
+  if(!changed) return;
+  if(typingActive){
+    pendingRoomData = fresh;
+  } else {
+    state.roomData = fresh;
+    if(state.screen === 'main') render();
+  }
+}
+
 function startPolling(){
   if(pollTimer) clearInterval(pollTimer);
-  pollTimer = setInterval(async () => {
-    const fresh = await loadRoom(state.roomCode);
-    if(!fresh) return;
-    const changed = JSON.stringify(fresh) !== JSON.stringify(state.roomData);
-    if(!changed) return;
-    if(typingActive){
-      pendingRoomData = fresh;
-    } else {
-      state.roomData = fresh;
-      if(state.screen === 'main') render();
-    }
-  }, 3500);
+  pollTimer = setInterval(pollOnce, 1500);
 }
+
+document.addEventListener('visibilitychange', () => {
+  if(document.visibilityState === 'visible' && state.screen === 'main'){
+    pollOnce();
+  }
+});
 
 // ---------- main screen ----------
 function renderMain(){
@@ -817,10 +848,10 @@ function renderMain(){
     state.revealedWish = null;
     render();
   };
-  document.getElementById('tabMine').onclick = () => { state.tab='mine'; render(); };
-  document.getElementById('tabDraw').onclick = () => { state.tab='draw'; state.revealedWish=null; render(); };
-  document.getElementById('tabTodo').onclick = () => { state.tab='todo'; render(); };
-  document.getElementById('tabDone').onclick = () => { state.tab='done'; render(); };
+  document.getElementById('tabMine').onclick = () => { state.tab='mine'; render(); pollOnce(); };
+  document.getElementById('tabDraw').onclick = () => { state.tab='draw'; state.revealedWish=null; render(); pollOnce(); };
+  document.getElementById('tabTodo').onclick = () => { state.tab='todo'; render(); pollOnce(); };
+  document.getElementById('tabDone').onclick = () => { state.tab='done'; render(); pollOnce(); };
 
   document.getElementById('myAvatarBtn').onclick = () => {
     document.getElementById('avatarFile').click();
@@ -1316,7 +1347,15 @@ function renderInstallButton(){
   };
 }
 
-render();
+async function init(){
+  const profile = await loadMyProfile();
+  if(profile){
+    if(profile.name) state.name = profile.name;
+    if(profile.lastRoomCode) state.roomCode = profile.lastRoomCode;
+  }
+  render();
+}
+init();
 </script>
 </body>
 </html>
